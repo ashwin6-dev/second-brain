@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Sparkles } from "lucide-react";
 import NoteEditorContainer from "./NoteEditorContainer.tsx";
 import { useDispatch } from 'react-redux';
-import { editNewNote } from "../state/noteEditorSlice.ts";
+import { editNewNote } from "../../state/noteEditorSlice.ts";
 
 const NoteCreationPanel = () => {
     const dispatch = useDispatch();
@@ -15,7 +15,7 @@ const NoteCreationPanel = () => {
                     onClick={() => dispatch(editNewNote())}
                 >
                     <div className="p-4 pb-16 cursor-text">
-                        Start writing your thoughts...
+                        Start writing your thoughts, ideas, notes...
                     </div>
                     <div className="border-t border-gray-200 p-2 flex flex-row text-sm gap-2 text-gray-500">
                         <Sparkles size={18} />

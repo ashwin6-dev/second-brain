@@ -13,9 +13,9 @@ import { X, Maximize2, Minimize2 } from "lucide-react"
 
 import '@mdxeditor/editor/style.css'
 import * as React from "react"
-import Button from "../components/Button.tsx";
-import { createNote } from "../services/inbox.ts";
-import {updateInbox} from "../state/inboxSlice.ts";
+import Button from "../../components/Button.tsx";
+import { createNote } from "../../services/inbox.ts";
+import {updateInbox} from "../../state/inboxSlice.ts";
 import { useDispatch } from 'react-redux';
 
 interface MDXEditorMethods {
